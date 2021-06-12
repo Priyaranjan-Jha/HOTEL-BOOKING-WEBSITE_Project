@@ -1,0 +1,31 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+}
+#list-view, #map-view {
+    scroll-behavior: smooth;
+}
+#list-view img {
+    height: 200px;
+    width: 250px;
+}
+.social-media-icons img {
+    height: 20px;
+    width: 22px;
+}
+
+
+
+
+
+
+

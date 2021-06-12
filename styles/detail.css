@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+header img {
+    height: 60px;
+    width: 60px;
+}
+section img {
+    height: 500px;
+    width: 500px;
+}
+.social-media-icons img {
+    height: 20px;
+    width: 22px;
+}
+
