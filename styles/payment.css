@@ -1,12 +1,20 @@
 html, body{
     height: 100%;
     width: 100%;
+    min-height: 100%;
+    margin: 0px;
+}
+body {
+    background-color: #e0e0e0;
 }
 .container {
     height: 100%;
     width: 100%;
-}
 
+}
+header {
+    background-color: rosybrown;
+}
 header img {
     height: 60px;
     width: 60px;
@@ -15,6 +23,25 @@ header img {
 section img {
     height: 500px;
     width: 500px;
+}
+.Hotel-Details {
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+.Customer-info {
+    margin: 2%;
+}
+.Payment-Details {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+footer {
+    background-color: rosybrown;
 }
 .social-media-icons img {
     height: 20px;
