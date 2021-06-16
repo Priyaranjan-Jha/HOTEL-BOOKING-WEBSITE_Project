@@ -2,8 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  min-height: 100%;
-  margin: 0px;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 body {
   background-color: #e0e0e0;
@@ -11,19 +11,77 @@ body {
 .container {
   height: 100%;
   width: 100%;
+  position: relative;
 }
-header {
-  background-color: rosybrown;
+main {
+  padding-bottom: 2%;
 }
 
-header img {
+header {
+  background-color: rosybrown;
+  position: sticky;
+  top: 0;
+  height: 63px;
+}
+header #login {
+  color: black;
+  margin-right: 2%;
+  padding-block: 20px;
+  float: right;
+  text-decoration: none;
+}
+
+
+header  img {
   height: 60px;
   width: 60px;
+  float: left;
+  
+  
 }
-#list-view,
+
+section li {
+  
+  display: inline;
+  padding: 2%;
+}
+section ul {
+  margin-left: 36%;
+}
+section li a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    margin: 0 auto;
+    left: 40%;
+    font-weight: bold;  
+}
+
+#list-view
+{
+  scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  
+}
 #map-view {
   scroll-behavior: smooth;
+  display: none;
 }
+#list-view .card-1 a {
+  color: black;
+  text-decoration: none;
+
+}
+#list-view .card-2 {
+  
+  transform: translateX(10%);
+  z-index: -1;
+  
+
+}
+
 #list-view img {
   height: 200px;
   width: 250px;
@@ -36,7 +94,37 @@ header img {
 }
 footer {
   background-color: rosybrown;
+  position: sticky;
+  bottom: 0;
+  height: 59px;
 }
+footer #contact {
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 30%;
+  left: 1%;
+}
+.social-media-icons {
+  
+  float: right;
+  margin-right: 1.5%;
+  padding-block: 18px;
+ 
+}
+
+footer p {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .social-media-icons img {
   height: 20px;
   width: 22px;
