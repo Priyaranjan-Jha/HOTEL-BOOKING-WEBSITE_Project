@@ -2,22 +2,130 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-color: #e0e0e0;
 }
 .container {
-  height: 100%;
+  height: auto;
   width: 100%;
+  position: relative;
+}
+main {
+  padding-bottom: 2%;
+}
+header{
+  background-color: rosybrown;
+  position: sticky;
+  top: 0;
 }
 
-header > img {
+
+ header a {
+   color: black;
+   margin-right: 2%;
+   padding-block: 20px;
+   float: right;
+   text-decoration: none;
+}
+
+header img {
   height: 60px;
   width: 60px;
+  text-align: center ;
+  line-height: 60px;
+}
+
+.search-bar {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  height: 350px;
+  display: flex;
+  
+ 
+}
+  #city {
+  
+  margin: auto;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 28%;
+  
+} 
+
+.city-images {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  justify-content: center;
+  
 }
 .city-images img {
   height: 150px;
   width: 150px;
+  padding: 4%;
+  border-radius: 25%;
+  
+}
+ .view-more a {
+  
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+  position: absolute;
+  top: 86%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+
+footer {
+  background-color: rosybrown;
+  height: 59px;
+  position: sticky;
+  bottom: 0;
+
+}
+footer #contact {
+     position: absolute;
+     color: black;
+     text-decoration: none;
+     position: absolute;
+     top: 30%;
+     left: 1%;
+}
+ .social-media-icons {
+     
+     float: right;
+     margin-right: 1.5%;
+     padding-block: 18px;
+    
+}
+
+footer p {
+     position: absolute;
+     font-size: 10px;
+     font-weight: bold;
+     color: black;
+     margin: 0;
+     top: 70%;
+     left: 50%;
+     transform: translateX(-50%);
 }
 .social-media-icons img {
   height: 20px;
   width: 22px;
-
+  
 }
+

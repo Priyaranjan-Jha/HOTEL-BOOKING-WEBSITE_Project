@@ -7,23 +7,25 @@
     <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="container">
+      <main>
       <header>
-        <img
+        <img 
           src="assests/images/logo.png"
           height="200"
           width="150"
           alt="logo"
         />
-        <a href="login.html" target="_self">Login</a>
+        <a id="login" href="login.html" target="_self">Login</a>
       </header>
 
       <section>
         <div class="search-bar">
-          <input type="search" name="cityName" placeholder="City" /><br />
+          <input id="city" type="text" name="cityName" placeholder="City" />
         </div>
 
         <div class="city-images">
@@ -51,12 +53,13 @@
         </div>
 
         <div class="view-more">
-          <a href="#" target="_self">View more>></a>
+          <a  href="#" target="_self">View more>></a>
         </div>
       </section>
-
+    </main>
+      
       <footer>
-        <a href="contact.html" target="_self">Contact Us</a>
+        <a id="contact" href="contact.html" target="_self">Contact Us</a>
         <div class="social-media-icons">
           <a href="https://www.facebook.com" target="_blank"
             ><img src="assests/images/facebook.png" width="22" height="20"
@@ -68,7 +71,7 @@
             ><img src="assests/images/twitter.png" width="22" height="20"
           /></a>
         </div>
-        <span>&copy 2020 ROOM SEARCH PVT. LTD.</span>
+        <p>&copy 2020 ROOM SEARCH PVT. LTD.</p>
       </footer>
     </div>
   </body>
