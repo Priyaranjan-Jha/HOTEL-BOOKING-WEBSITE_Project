@@ -347,6 +347,7 @@ h1 {
     width: 18px;
     height: 15px;
   }
+
   .header {
     background-color: rosybrown;
     width: 100%;
@@ -358,6 +359,7 @@ h1 {
     overflow: hidden;
     z-index: 2;
   }
+
   footer {
     background-color: rosybrown;
     height: 55px;
@@ -367,11 +369,7 @@ h1 {
   .content li {
     padding-top: 20%;
   }
-  /* .content ul{
-                  margin-top: 2%;
-                  margin-left: 38%;
-  
-                } */
+
   .content li a {
     font-size: 20px;
     text-decoration: none;
@@ -448,3 +446,4 @@ h1 {
     color: orange;
   }
 }
+/* final css */
