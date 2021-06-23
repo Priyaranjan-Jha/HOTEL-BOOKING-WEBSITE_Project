@@ -2,52 +2,22 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  min-height: 100%;
+  margin: 0px;
 }
 body {
   background-color: #e0e0e0;
 }
 .container {
-  height: auto;
+  height: 100%;
   width: 100%;
-  position: relative;
-}
-main {
-  padding-bottom: 2%;
 }
 header {
   background-color: rosybrown;
-  position: sticky;
-  top: 0;
-  height: 63px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
-header #login {
-  color: black;
-  font-weight: bold;
-  margin-right: 2%;
-  padding-block: 20px;
-  float: right;
-  text-decoration: none;
-  transform: translateX(-10%);
-} 
-
 header img {
   height: 60px;
   width: 60px;
-  text-align: center ;
-  line-height: 60px;
-  margin-left: 1%;
-
-}
-section {
-  overflow: hidden;
-  
 }
 
 section img {
@@ -58,113 +28,21 @@ section img {
   background-color: rgb(132, 136, 139);
   width: 50%;
   height: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6%;
-  margin-bottom: 0.5%;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 2% auto;
 }
-
-.Hotel-Details img {
-  max-height: 230px;
-  max-width: 270px;
-  text-align: center;
-}
-.vvv {
-  margin-left: 4%;
-  
-}
-.vvv h1 {
-  margin-top: 20%;
-  
-}
-
-
-.info {
-  background-color: rosybrown;
-  height: 10%;
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 12%;
-  transform: translateY(10%);
-  border: 1px solid black ;
-  border-radius: 5px;
-  
-}
-
 .Customer-info {
   margin: 2%;
-  margin-left: 12%;
-  margin-top: auto;
-  margin-bottom: auto;
-  
-}
-.Customer-info strong {
-  font-family: cursive;
 }
 .Payment-Details {
   margin: 2%;
-  margin-left: 11%;
+  border: 1px solid black;
+  border-radius: 5px;
   padding: 1% 2%;
-}
-.Payment-Details strong {
-  font-family: cursive;
-  
-}
-
- .pay {
-  color: black;
-  text-decoration: none;
-  margin: 0 auto;
-
-}
-
-.pay a {
-  color: black;
-  text-decoration: none;
 }
 
 footer {
   background-color: rosybrown;
-  position: sticky;
-  bottom: 0;
-  height: 59px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
-footer #contact {
-  float: left;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 2%;
-  transform: translateX(10%);
-  
-}
-.social-media-icons {
-  position: absolute;
-  float: right;
-  margin-right: 2%;
-  padding-block: 18px;
-  left: 92%;
-}
-
-footer p {
-  margin: auto;
-  font-size: 10px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  transform: translateX(-50%);
-}
-
 .social-media-icons img {
   height: 20px;
   width: 22px;

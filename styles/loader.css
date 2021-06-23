@@ -1,6 +1,7 @@
 .loader {
   height: 70px;
   width: 70px;
+  position: absolute;
   margin: auto;
   top: 0;
   right: 0;
