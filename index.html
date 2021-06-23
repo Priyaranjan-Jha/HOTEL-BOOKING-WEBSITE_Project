@@ -7,58 +7,92 @@
     <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles/index.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
       <main>
-      <header>
-        <img 
-          src="assests/images/logo.png"
-          height="200"
-          width="150"
-          alt="logo"
-        />
-        <a id="login" href="login.html" target="_self">Login</a>
-      </header>
+        <header>
+          <!-- header section of HTML Section -->
+          <img
+            src="assests/images/logo.png"
+            height="200"
+            width="150"
+            alt="logo"
+          />
+          <a href="login.html" target="_self">Login</a>
+        </header>
 
-      <section>
-        <div class="search-bar">
-          <input id="city" type="text" name="cityName" placeholder="City" />
-        </div>
+        <section>
+          <!-- Main Content div is wrapped inside Section of HTML section -->
+          <div class="search-bar">
+            <input autocomplete="new-password" id="city" type="text" name="cityName" placeholder="City" />
+          </div>
 
-        <div class="city-images">
-          <a href="list.html" target="_self"
-            ><img
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+          <div class="city-images">
+            <div class="city-image-container">
+            <a href="list.html" target="_self"
+              >
+              <!-- <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                height="300"
+                width="300"
+            />  -->
+            <div class="img-description-layer-1">
+            <p class="img-description" > Delhi</p></a>
+          </div> 
+          </div>
+            
+          
+          <div class="city-image-container">
+            <!-- <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
               height="300"
               width="300"
-          /></a>
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-            height="300"
-            width="300"
-          />
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-            height="300"
-            width="300"
-          />
-          <img
-            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-            height="300"
-            width="300"
-          />
-        </div>
+            /> -->
+            <div class="img-description-layer-2">
+              <p class="img-description" > Goa</p>
+            </div>
+            </div>
+          
+            
+            <div class="city-image-container">   
+            <!-- <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+              height="300"
+              width="300"
+            /> -->
+            <div class="img-description-layer-3">
+              <p class="img-description" > Hyderabad</p>
+            </div>
+            </div>
 
-        <div class="view-more">
-          <a  href="#" target="_self">View more>></a>
-        </div>
-      </section>
-    </main>
-      
+            
+            
+            <div class="city-image-container"> 
+            <!-- <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+              height="300"
+              width="300"
+            /> -->
+            <div class="img-description-layer-4">
+              <p class="img-description" > Kolkata</p>
+             </div>
+            </div>
+          </div>
+
+          <div class="view-more">
+            <a href="#" target="_self">View more>></a>
+          </div>
+        </section>
+      </main>
+
       <footer>
+        <!-- Footer section of HTML Section divided into 3 parts for proper alignments -->
         <a id="contact" href="contact.html" target="_self">Contact Us</a>
         <div class="social-media-icons">
           <a href="https://www.facebook.com" target="_blank"
