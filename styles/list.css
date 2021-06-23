@@ -3,13 +3,14 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  padding: 0;
   font-family: 'Ubuntu', sans-serif;
 }
 body {
   background-color: #e0e0e0;
 }
 .container {
-  height: 100%;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -22,22 +23,33 @@ header {
   position: sticky;
   top: 0;
   height: 63px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 header #login {
   color: black;
+  font-weight: bold;
   margin-right: 2%;
   padding-block: 20px;
   float: right;
   text-decoration: none;
+  transform: translateX(-10%);
+
 }
 
 
 header  img {
   height: 60px;
   width: 60px;
-  float: left;
+  text-align: center ;
+  line-height: 60px;
+  margin-left: 1%;
   
-  
+}
+section {
+  overflow: hidden;
 }
 
 section li {
@@ -78,50 +90,63 @@ section li a {
   
   transform: translateX(10%);
   z-index: -1;
-  
-
 }
 
 #list-view img {
   height: 200px;
   width: 250px;
+  /* margin-bottom: 0%; */
 }
-#list-view div {
+.card-1,  .card-2, .card-3 {
   margin: 2%;
-  background-color: rgb(132, 136, 139);
+  background-color: lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 3.5%;
+  margin-right: 1.5%;
   width: 40%;
-  height: auto;
+  height: 200px;
+}
+.hotel-1-description , .hotel-2-description, .hotel-3-description {
+  margin-left: 3%;
 }
 footer {
   background-color: rosybrown;
   position: sticky;
   bottom: 0;
   height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 footer #contact {
-  position: absolute;
+  float: left;
   color: black;
   text-decoration: none;
-  position: absolute;
-  top: 30%;
-  left: 1%;
+  font-weight: bold;
+  margin-left: 2%;
+   transform: translateX(10%);
+ 
 }
+
 .social-media-icons {
-  
+  position: absolute;
   float: right;
-  margin-right: 1.5%;
+  margin-right: 2%;
   padding-block: 18px;
+  left: 92%;
  
 }
 
 footer p {
-  position: absolute;
+  margin: auto;
   font-size: 10px;
   font-weight: bold;
   color: black;
-  margin: 0;
-  top: 70%;
-  left: 50%;
+  text-decoration: none;
   transform: translateX(-50%);
 }
 
