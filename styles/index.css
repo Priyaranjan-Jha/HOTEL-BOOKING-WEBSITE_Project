@@ -1,289 +1,179 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-}
-body {
-  background-color: #e0e0e0;
-}
-.container {
-  height: auto;
-  width: 100%;
-  position: relative;
-}
-main {
-  padding-bottom: 2%;
-}
-header{
-  background-color: rosybrown;
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 63px;
-  top: 0;
-  /* z-index: 1; */
-}
-
-
- header a {
-   
-   color: black;
-   font-weight: bold;
-   margin-right: 2%;
-   padding-block: 20px;
-   float: right;
-   text-decoration: none;
-   transform: translateX(-10%);
+margin: 0;
+padding: 0;
+width: 100%;
+font-family: Ubuntu ,sans-serif;font-size: 18px;
 
 }
-
-header img {
-  height: 60px;
-  width: 60px;
-  text-align: center ;
-  line-height: 60px;
-  margin-left: 1%;
+main{
+min-height: cacl(100vh- 63px - 63px);
+padding-bottom: 5%;
 }
-section { 
-  overflow: hidden;
+.container{
+width: 100%;
+position:relative;
 }
-
-.search-bar {
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-  background-position: center ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 380px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-15%);
-  top: 0;
+.header > img {
+height: 60px;
+width: 60px;
+  }
+.city-images-card img{
+  height: 150px;
+  width: 150px;
+  border-radius:50px;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  -ms-border-radius:50px;
+  -o-border-radius:50px;
+  box-shadow: 10px 10px 10px grey;
 }
-
-  #city {
-  
-  margin: auto;
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 12px;
-  width: 28%;
-  
+.social-media-icon img{
+width:22px;
+height:20px;
+}
+.header{
+background-color:rosybrown;
+width: 100%;
+height:63px;
+position: fixed;
+display: flex;
+flex-direction: row;
+top: 0;
+}
+footer{
+background-color:rosybrown;
+margin-top: 260px;
+width: 100%;
+height: 100%;
+height: 63px;
+position:sticky;
+bottom: 0;
+}
+.content{
+background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+height: 380px;
+}
+.city-images-card{
+margin-left: 15%;
+margin-right: 15%;
+padding-top: 22%;
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content:space-between;
+margin-top: 10%;
+}
+.social-media-icon{
+  padding-top:1.5%;
+  margin-left: 90%;
+  margin-right: 2%;
 } 
-#city:focus {
-  outline: none;
-}
 
-.city-images {
-  height: 260px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+
+
+.btn-info{
+color:black;
+text-decoration: none;
+position: absolute;
+top: 15px;
+left: 30px;
+}
+footer p{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  left:42%;
+  font-size:small;
+  }
+.viewmore{
+margin-left:45%;
+margin-top: 2%;
+}                       
+/* .content #search{
+    display: flex;
+   margin: 0;
+    
+}  */
+input {
+  padding: 8px 10px;
+  border: 0;
+  font-size: 16px;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
+  border: 1px solid white;
+  background-color:#f1f1f1;
+  width:100%;  
+}
+#search{
+width:390px;  
+}
+.header a{
+  margin-left: 85%;
+}
+.header img{
+  margin-left:1%;
+}
+.content input[type="search"]:focus {
+  outline :none;
+}
+.content{
   flex-wrap: nowrap;
-  
 }
-/* .city-images img {
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px grey;
-   
+/* .search_bar{
+  display:flex;
+}
+#search{
+  margin:auto;
 } */
-.img-description-layer-1 {
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg");
-  height: 150px;
+
+.img__description_layer {
+background: rgba(1, 3, 7, 0.6);
+height:150px;
   width: 150px;
-  border-radius: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -70%;
+  margin-top:-150px;
+  border-radius:50px;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 10px grey;
-}
-.img-description-layer-2{
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg");
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -70%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px grey;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-.img-description-layer-3{
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg");
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px grey;
-}
-.img-description-layer-4{
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg");
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px grey;
-}
-.img-description {
-   visibility: hidden;
-   opacity: 0;
-}
-.img-description-layer-1:hover .img-description {
-  background:  rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  text-decoration: none;
+.city-one:hover .img__description_layer {
   visibility: visible;
   opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  line-height: 150px;
-  text-align: center;
-
 }
-.img-description-layer-2:hover .img-description {
-  background:  rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  text-decoration: none;
-  visibility: visible;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  line-height: 150px;
-  text-align: center;
+.card-one:hover .img__description {
+  transform: translateY(0);
 }
-.img-description-layer-3:hover .img-description {
-  background:  rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  text-decoration: none;
-  visibility: visible;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  line-height: 150px;
-  text-align: center;
-}
-.img-description-layer-4:hover .img-description {
-  background:  rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  height: 150px;
-  width: 150px;
-  border-radius: 25%;
-  text-decoration: none;
-  visibility: visible;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  line-height: 150px;
-  text-align: center;
+.img__description a{
+  color:#fff;
 }
 
 
- .view-more {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } 
+.btn-light
 
-
- .view-more a {
-  
+{
+ height: 40px;
+ margin-top: 10px;
+ }
+ #login-button{
+   margin-left: 80%;
+ }
+ .btn-info {
   color: black;
-  font-weight: bold;
   text-decoration: none;
-  margin: auto;  
-  transform: translateY(-70%);
+  position: absolute;
+  top: 15px;
+  left: 30px;
 }
-
-
-footer {
-  background-color: rosybrown;
-  height: 59px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  width: 100%;
-  bottom: 0;
-
-}
-
-footer #contact {
-  
-    float: left;
-     color: black;
-     text-decoration: none;
-     font-weight: bold;
-     margin-left: 2%;
-     transform: translateX(10%);
-   
-}
- .social-media-icons {
-     position: absolute;
-     float: right;
-     padding-block: 18px;
-     margin-right: 2%;
-     left: 92%;
-   
-}
-
-footer p {
-  
-     margin: auto;
-     font-size: 10px;
-     font-weight: bold;
-     color: black;
-     text-decoration: none;
-     transform: translateX(-50%);
-}
-.social-media-icons img {
-  height: 20px;
-  width: 22px;
-  
-}
-
